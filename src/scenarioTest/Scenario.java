@@ -1,7 +1,11 @@
 package scenarioTest;
 
 import personnages.Gaulois;
-import villagegaulois.Etal;
+import produit.Poisson;
+import produit.Produit;
+import produit.Sanglier;
+import vilagegauloisold.Etal;
+import vilagegauloisold.IEtal;
 
 public class Scenario {
 
@@ -14,7 +18,7 @@ public class Scenario {
 		Gaulois ordralfabetix = new Gaulois("Ordralfabétix", 9);
 		Gaulois obelix = new Gaulois("Obélix", 20);
 		Gaulois asterix = new Gaulois("Astérix", 6);
-
+		
 		Etal<Sanglier> etalSanglierObelix = new Etal<>();
 		Etal<Sanglier> etalSanglierAsterix = new Etal<>();
 		Etal<Poisson> etalPoisson = new Etal<>();
@@ -26,10 +30,10 @@ public class Scenario {
 
 		Sanglier[] sangliersObelix = { sanglier1, sanglier2 };
 		Sanglier[] sangliersAsterix = { sanglier3, sanglier4 };
-
+		
 		Poisson poisson1 = new Poisson("lundi");
 		Poisson[] poissons = { poisson1 };
-
+		/*
 		village.installerVendeur(etalSanglierAsterix, asterix, sangliersAsterix, 10);
 		village.installerVendeur(etalSanglierObelix, obelix, sangliersObelix, 8);
 		village.installerVendeur(etalPoisson, ordralfabetix, poissons, 5);
@@ -42,7 +46,7 @@ public class Scenario {
 			System.out.println(depense[i]);
 		}
 
-		System.out.println(village);
+		System.out.println(village);*/
 
 	}
 
