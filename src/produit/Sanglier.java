@@ -2,7 +2,7 @@ package produit;
 
 import personnages.Gaulois;
 
-public class Sanglier extends Produit{
+public class Sanglier extends Produit implements IProduit{
 	private String nom;
 	private String unite;
 	private Gaulois chasseur;
@@ -15,8 +15,13 @@ public class Sanglier extends Produit{
 	}
 	
 	@Override
-	public void descriptionProduit() {
-		
+	public String descriptionProduit() {
+		return "";
 	}
-
+	
+	
+	@Override 
+	public double calculerPrix(int prix) {
+		return 1.5;
+	}
 }

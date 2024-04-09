@@ -17,7 +17,7 @@ public abstract class Produit implements IProduit {
 	}
 	
 	@Override
-	public abstract void descriptionProduit();
+	public abstract String descriptionProduit();
 	
 
 }

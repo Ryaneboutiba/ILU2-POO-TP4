@@ -11,9 +11,12 @@ public class Poisson extends Produit{
 	}
 	
 	@Override
-	public void descriptionProduit() {
-		
+	public String descriptionProduit() {
+		return "";
 	}
 	
-	
+	@Override 
+	public double calculerPrix(int prix) {
+		return 1.5;
+	}
 }
